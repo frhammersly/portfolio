@@ -162,7 +162,7 @@ ol {
     transition: all 0.8s;
 }
 #main-menu.navbar-default {
-    background-color: rgba(248, 248, 248, 0);
+    background-color: rgba(255, 255, 255, 1);
 }
 #main-menu a.navbar-brand {
     text-transform: uppercase;
@@ -229,9 +229,7 @@ ol {
     height: 10px;
     width: 60px;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 .section-title.center p {
     color: #535353;
@@ -291,7 +289,7 @@ ol {
     letter-spacing: 3px;
     text-transform: uppercase;
     margin-top: 15px;
-    padding: 1px 0px;
+    padding: 1px 0;
     color: #222;
     font-weight: 400;
 }
@@ -307,8 +305,7 @@ ol {
     padding: 14px 31px 33px 35px;
 }
 #about hr {
-    border-color: #333;
-    border-width: 1px;
+    border: 1px #333;
     clear: both;
     float: left;
     margin: 10px 0;
@@ -680,9 +677,7 @@ ol.type li a.active {
     height: 10px;
     width: 60px;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 .section-title.center hr {
     border-top: 4px solid rgba(252, 172, 69, 0.34);
@@ -767,7 +762,7 @@ ol.type li a.active {
 }
 @keyframes f {
     from {
-        top: 0%;
+        top: 0;
         opacity: 0;
     }
     to {
@@ -799,7 +794,7 @@ ol.type li a.active {
 }
 @keyframes i {
     from {
-        top: 0%;
+        top: 0;
         opacity: 0;
     }
     to {
@@ -825,13 +820,12 @@ ol.type li a.active {
     font-size: 22px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 5px 0px;
+    padding: 5px 0;
     color: #222;
     font-weight: 400;
 }
 #team-about hr {
-    border-color: #333;
-    border-width: 3px;
+    border: 3px #333;
     clear: both;
     float: left;
     width: 60px;
@@ -922,9 +916,9 @@ ol.type li a.active {
     padding: 100px 0;
 }
 #clients .overlay {
-    background: #fff;
     height: auto;
     background-attachment: fixed;
+    background-color: #fff;
 }
 .clients-logo ul {
     display: inline-block;
@@ -976,7 +970,7 @@ ol.type li a.active {
     font-family: "Lekton", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #999;
     font-size: 13px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     margin: 5px 0 15px;
     line-height: 1.8;
     font-weight: 400;
@@ -999,7 +993,7 @@ ol.type li a.active {
     padding: 4px;
     position: absolute;
     text-transform: uppercase;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     width: 50px;
     opacity: 0.8;
 }
@@ -1011,7 +1005,7 @@ ol.type li a.active {
     color: #999;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 }
 #blog .blog a.read-more:hover {
     color: #555;
@@ -1021,7 +1015,7 @@ ol.type li a.active {
 
 #Contact {
     background: #fff;
-    padding: 100px 0 0px 0;
+    padding: 100px 0 0 0;
 }
 .contactForm {
     margin: 0 0 90px 0;
@@ -1064,9 +1058,8 @@ section#Contact .form-group {
 section#Contact .form-group input,
 section#Contact .form-group textarea {
     background-color: transparent;
+    border: solid #cccccc ;
     border-width: 0 0 1px;
-    border-style: solid;
-    border-color: #cccccc;
     border-radius: 0;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     color: #555;
@@ -1156,7 +1149,6 @@ select {
     padding: 15px;
     width: 100%;
     height: 100%;
-    border: 0;
     border: 1px solid #ccc;
     font-size: 12px;
     font-weight: 400;
@@ -1165,7 +1157,6 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid #03c9a9;
     outline: none;
     position: relative;
     z-index: 5;
@@ -1264,7 +1255,7 @@ ul.footer-social li {
         padding: 30px 0 30px;
     }
     #about .bio {
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 @media (max-width: 603px) {
@@ -1287,7 +1278,7 @@ ul.footer-social li {
         text-align: center;
     }
     .portfolio-item {
-        width: 450px;
+        width: 100%;
     }
     .hover-bg .hover-text {
         padding: 12% 10%;
@@ -1299,7 +1290,7 @@ ul.footer-social li {
         font-size: 15px;
     }
     #about .bio {
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 @media (max-width: 360px) {
