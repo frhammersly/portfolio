@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Invers - Personal Resume & Portfolio Template</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/default.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="site-header" role="banner">
+			<h1 class="site-title">Invers</h1>
+			<p class="site-description">Personal Resume & Portfolio Template - Documentation</p>
+		</header><!-- .site-header -->
+		<div id="main">
+			<div class="intro">
+				<p>Firstly, a huge thanks for purchasing this template! If you have any questions that are not answered here, please feel free to email via our user page contact form <a href="https://wrapbootstrap.com/user/Line">here</a>. Thanks so much!</p>
+				<ul class="byline">
+					<li><em>Template created on</em> 19/10/2015 <em>by</em> <a href="http://linewp.com/">Line Themes</a></li>
+					<li><em>Email:</em> <a href="mailto:30theme@gmail.com">30theme@gmail.com</a></li>
+					<li><em>Version:</em> 1.0</li>
+				</ul>	
+			</div><!-- .intro -->
+			<div id="content" role="main">
+				<section>
+					<h2 id="toc">Table of Contents</h2>
+					<ol>
+						<li><a href="#filesStructure">Files Structure</a>
+							<ol>
+								<li><a href="#html">HTML Files and Structure</a></li>
+								<li><a href="#php">PHP Files and Structure</a></li>
+								<li><a href="#css">CSS Files and Structure</a></li>
+								<li><a href="#javascript">JavaScript Files and Structure</a></li>
+							</ol>
+						</li>
+						<li><a href="#customization">Customization</a>
+							<ol>
+								<li><a href="#navbar">Replace Navigation Title</a></li>
+								<li><a href="#text">Edit Text</a></li>
+								<li><a href="#skill">Change Skill bars</a></li>
+								<li><a href="#animations">Change InView Animations</a></li>
+								<li><a href="#form">Change the Email Address for Contact Form</a></li>
+								<li><a href="#social">Add Links to Social Network Profiles</a></li>
+							</ol>
+						</li>
+						<li><a href="#upload">Upload</a></li>
+						<li><a href="#credits">Credits</a></li>
+					</ol>
+					<hr />
+				</section>
+				<section>
+					<h2 id="filesStructure">A. Files Structure - <a href="#toc">top</a></h2>
+					<p>Every file (HTML, CSS, JS) that was created by us has clear code, wrapped with comments - all this for your convenience.</p>
+					<ul>
+					<li><strong>css</strong> - CSS styles folder</li>
+					<li><strong>fonts</strong> - webfont icons folder</li>
+					<li><strong>img</strong> - folder for images</li>
+					<li><strong>js</strong> - JavaScript files folder</li>
+					<li><strong>php</strong> - PHP contact script folder</li>
+					<li><strong>index.html</strong> - main HTML file</li>
+					</ul>
+
+					<hr />
+					<h3 id="html">1. HTML Files and Structure</h3>
+					<p>This Template has a Responsive layout and is based on the <strong>Bootstrap Framework</strong>.
+                    For more information about this visit <a target="_blank" href="http://getbootstrap.com/">Bootstrap site</a>.</p>
+                    <p>The default Bootstrap grid system utilizes 12 columns, making for a 940px wide container without responsive features enabled. 
+                    With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+					<p><code>index.html</code> is the main template file that contains the HTML structure of the template. Here is the general structure (shortened):</p>
+					
+					<pre><code class="html">					
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;!-- Included CSS Files --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+         &lt;!-- PRELOADER --&gt;
+          &lt;!-- Navigation --&gt;
+           &lt;!-- Home Section --&gt;
+            &lt;!-- About Me Section --&gt;
+             &lt;!-- Services Section --&gt;
+              &lt;!-- Portfolio Section --&gt;
+               &lt;!-- Resume Section --&gt;
+               &lt;!-- Team Section --&gt;
+              &lt;!-- Testimonials Section --&gt;
+             &lt;!-- Clients logo Section --&gt;
+            &lt;!-- Blog Section --&gt;
+           &lt;!-- Contact Section--&gt;
+          &lt;!-- Footer --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+
+					<hr />
+					<h3 id="php">2. PHP Files and Structure</h3>
+					<p><code>contact_me.php</code> is the template file that contains the PHP code to handle the contact form massages.</p>
+					<hr />
+					<h3 id="css">3. CSS Files and Structure</h3>
+					<p>All CSS files can be found in the template’s <code>css</code> folder. Here's the list of the files used within the template and a short descriptions of their function:</p>
+					<ul>
+						<li><code>style.css</code> - the main CSS file that includes all template styles and formatting.</li>
+						<li><code>bootstrap.min.css</code> - includes bootstrap main styles.</li>
+						<li><code>animate.min.css</code> - A cross-browser library of CSS animations</li>
+						<li><code>magnific-popup.css</code> - Magnific Popup is a responsive lightbox & dialog script</li>
+						<li><code>owl.carousel.css</code> - This file includes styles for the owl.carousel.</li>
+						<li><code>etlinefont.css</code> - This file includes styles for the etline font icons.</li>
+						<li><code>font-awesome.min.css</code> - This file includes styles for the Font Awesome icons.</li>
+					</ul>
+					<p>Styles.css is probably the file you are most likely to edit if you are changing the look of the page.The file is commented and broken into sections using:</p>
+
+					<pre><code class="css">					
+/* TABLE OF CONTENTS
+
+    1. Basic Document Styles
+    2. Navigation
+    3. Section Titles
+    4. Section Home
+    5. Section About
+    6. Section Services
+    7. Section Portfolio
+    8. Section Resume
+    9. Section Team
+    10. Section Testimonials
+    11. Section Clients
+    12. Section Blog
+    13. Section Contact
+    14. Footer
+    15. Media Queries For Responsive Design
+*/
+					</code></pre>
+
+					<hr />
+					<h3 id="javascript">4. JavaScript Files and Structure</h3>
+					<p>This template uses JavaScript to enhance the user’s experience. All JavaScript files can be found in the template’s <code>js</code> folder. Here's the list of the files used within the template:</p>
+					<pre><code class="html">					
+      &lt;!-- jQuery Version 2.1.3 --&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- Bootstrap Core JavaScript --&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- Plugin JavaScript --&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/SmoothScroll.js&quot;&gt;&lt;/script&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.isotope.js&quot;&gt;&lt;/script&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.magnific-popup.js&quot;&gt;&lt;/script&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/owl.carousel.js&quot;&gt;&lt;/script&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/wow.min.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- Contact Form JavaScript --&gt;
+      &lt;script src=&quot;js/jqBootstrapValidation.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;js/contact_me.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- Custom Theme JavaScript --&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
+					</code></pre>
+					<p>In <code>main.js</code> includes other scripts calls and our JS functions made for template.</p>
+					<hr />
+				</section>
+				<section>
+					<h2 id="customization">C. Customization - <a href="#toc">top</a></h2>
+					<p>You can simply change template's, make the following changes.</p>
+					<hr />
+					<h3 id="navbar">1. Replace Navigation Title</h3>
+					<p>To change the Navigation Title replace the <code>Invers</code> text located in the template's <code>index.html</code> file with yours (line 52).</p>
+
+					<pre><code class="html">
+&lt;a class=&quot;navbar-brand&quot; href=&quot;index.html&quot;&gt;&lt;i class=&quot;fa fa-caret-up&quot;&gt;&lt;/i&gt; Invers&lt;/a&gt;
+					</code></pre>
+					<hr />
+					<h3 id="text">2. Edit Text</h3>
+					<p>All static texts can be modified within the <code>index.html</code> file. For example, to change the text "Jane Doe" open <code>index.html</code> and edit text on line 72.</p>
+					<hr />
+					<h3 id="skill">3. Change Skill bars</h3>
+					<p>To change the Skills percent of your site open <code>index.html</code> and replace your own skills percent.</p>
+
+					<pre><code class="html">
+&lt;div class=&quot;col-md-4 skills&quot;&gt;
+   &lt;h6 class=&quot;progress-title&quot;&gt;DESIGNING&lt;/h6&gt;
+   &lt;div data-progress=&quot;80&quot; class=&quot;skills-item wow&quot;&gt;
+      &lt;div class=&quot;skills-item-progress&quot;&gt;
+         &lt;span class=&quot;counter&quot;&gt;
+                        &lt;span class=&quot;count&quot;&gt;80&lt;/span&gt; %
+         &lt;/span&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;h6 class=&quot;progress-title&quot;&gt;DEVELOPMENT&lt;/h6&gt;
+   &lt;div data-progress=&quot;90&quot; class=&quot;skills-item wow&quot;&gt;
+      &lt;div class=&quot;skills-item-progress&quot;&gt;
+         &lt;span class=&quot;counter&quot;&gt;
+                        &lt;span class=&quot;count&quot;&gt;90&lt;/span&gt; %
+         &lt;/span&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+					</code></pre>
+					<hr />
+					<h3 id="animations">4. Change InView Animations</h3>
+					<p>You can define a simple animation for any element which will be fired when element appears on screen.
+					List of all animations <a href="http://daneden.github.io/animate.css/">can be found here</a>.</p>
+					<p>To define an InView animation, add a <code> wow fadeIn </code> attribute with desired animation's name to any element.
+					For example:</p>
+
+					<pre><code class="html">
+&lt;div class=&quot;service wow fadeInUp&quot;&gt;
+					</code></pre>
+					<hr />
+					<h3 id="form">5. Change the Email Address for Contact Form</h3>
+					<p>Make sure that you change the default email address <em>yourname@yourdomain.com</em> to your own in <code>contact_me.php</code> file (line 19) within the <code>php</code> folder to receive emails when the contact form is submitted.</p>
+
+					<pre><code class="javascript">
+// Create the email and send the message
+$to = 'yourname@yourdomain.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_subject = "Website Contact Form:  $name";
+$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
+$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: $email_address";	
+mail($to,$email_subject,$email_body,$headers);
+return true;			
+?>
+					</code></pre>
+					<hr />
+					<h3 id="social">6. Add Links to Social Network Profiles</h3>
+					<p>To add links to your social network profiles open <code>index.html</code> file and edit lines 549-552. Here is a default example:<p>
+
+					<pre><code class="html">
+&lt;ul class=&quot;footer-social&quot;&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-behance wow fadeInUp&quot; data-wow-duration=&quot;1s&quot; data-wow-delay=&quot;0.2s&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-google-plus wow fadeInUp&quot; data-wow-duration=&quot;1s&quot; data-wow-delay=&quot;0.4s&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-dribbble wow fadeInUp&quot; data-wow-duration=&quot;1s&quot; data-wow-delay=&quot;0.6s&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-facebook wow fadeInUp&quot; data-wow-duration=&quot;1s&quot; data-wow-delay=&quot;0.8s&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+					</code></pre>
+					<p>All icons can be replaced with new ones, their number can be increased/decreased. All available icons you can see on official website - <a href="http://fontawesome.io/icons/">Font Awesome</a>.</p>
+					<p>To change icons, simply change the class names, for example: <code>fa-facebook</code> and <code>fa-twitter</code>. URLs can be attached to <code>href</code> attribute.</p>
+					<hr />
+				</section>
+				<section>
+					<h2 id="upload">C. Upload - <a href="#toc">top</a></h2>
+					<p>After you have made all necessary changes, upload the content of your selected version folder to your web hosting server using FTP client or File Manager (or similar) utility provided by the web hosting company.</p>
+					<hr />
+				</section>
+				<section>
+					<h2 id="credits">D. Credits - <a href="#toc">top</a></h2>
+					<p>We have used the following scripts, fonts or other files as listed.</p>
+					<ul>
+						<li>jQuery 2.1.3 library: <a href="http://jquery.com/download/">http://jquery.com</a></li>
+						<li>Bootstrap: <a href="http://getbootstrap.com/">http://getbootstrap.com</a></li>
+						<li>jqBootstapValidation: <a href="https://github.com/ReactiveRaven/jqBootstrapValidation">https://github.com/ReactiveRaven/jqBootstrapValidation</a></li>
+						<li>OwlCarousel: <a href="https://github.com/OwlFonk/OwlCarousel">https://github.com/OwlFonk/OwlCarousel</a></li>
+						<li>Magnific Popup: <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+						<li>Animate.css: <a href="https://github.com/daneden/animate.css">https://github.com/daneden/animate.css</a></li>
+						<li>Isotope: <a href="https://github.com/metafizzy/isotope">https://github.com/metafizzy/isotope/</a></li>
+						<li>SmoothScroll: <a href="https://github.com/cferdinandi/smooth-scroll">https://github.com/cferdinandi/smooth-scroll</a></li>
+						<li>WOW Js: <a href="http://mynameismatthieu.com/WOW/index.html">http://mynameismatthieu.com/WOW/index.html/</a></li>
+						<li>Lekton Font: <a href="http://www.google.com/fonts/specimen/Lekton">http://www.google.com/fonts/specimen/Lekton</a></li>
+						<li>Montserrat Font: <a href="http://www.google.com/fonts/specimen/Montserrat">http://www.google.com/fonts/specimen/Montserrat</a></li>
+						<li>Abel Font: <a href="http://www.google.com/fonts/specimen/Abel">http://www.google.com/fonts/specimen/Abel</a></li>
+						<li>etline font Icons: <a href="https://github.com/pprince/etlinefont-bower/">https://github.com/pprince/etlinefont-bower</a></li>
+						<li>Font Awesome: <a href="http://fontawesome.io/">http://fontawesome.io/</a></li>
+						<li>kibisi: <a href="http://www.kibisi.com/">http://www.kibisi.com/</a></li>
+						<li>Daniele Zedda: <a href="http://www.flickr.com/photos/astragony/">http://www.flickr.com/photos/astragony/</a></li>
+						<li>Pixabay: <a href="https://pixabay.com/">https://pixabay.com/</a></li>
+						<li>Photos (free of copyright restrictions): <a href="http://unsplash.com/">http://unsplash.com</a></li>
+					</ul>
+					<hr />
+				</section>
+				<p><em>Once again, thank you so much for purchasing this template! Please feel free to email us if you have any questions or just want to make some suggestions.</em></p>
+				<p><strong>Line themes</strong></p>
+				<p><a href="#toc">Go To Table of Contents</a></p>
+			</div><!-- #content -->
+		</div><!-- #main -->
+		<footer class="site-info" role="contentinfo">
+			<p>© 2015 Line themes. All rights reserved.</p>
+		</footer><!-- .site-info -->
+	</div><!-- .wrap -->
+
+</body>
+</html>
